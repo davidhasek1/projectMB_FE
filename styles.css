@@ -8,18 +8,30 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-main {
+
+.header-section {
     display: flex;
+    background-image: linear-gradient(to right bottom, rgba(48, 56, 65, 0.7), rgba(58, 71, 80, 0.7)), url('./img/carHD.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
 }
+
 header {
     display: flex;
     width: 80%;
-    /* height: 10vh; */
-    margin:auto;
+    height: 10vh;
+    margin: 0 auto auto auto;
     align-items: center;
 
 }
+
+
+
 .logo-container {
     flex: 1;
 }
@@ -48,44 +60,46 @@ nav {
     list-style: none;
 }
 .nav-link {
-    color: #5f5f79;
+    color: #ffffff;
     font-size: 18px;
     text-decoration: none;
     
 
 }
 
-.prsentational {
-    display: flex;
-    background-image: linear-gradient(to right bottom, rgba(48, 56, 65, 0.5), rgba(58, 71, 80, 0.5)), url('./img/carHD.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    align-items: center;
-    color: white;
-    
-}
 .introdution {
     display: flex;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .intro-text {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 100px auto;
     width: 80%;
     margin-bottom: 200px;
+    color: white;
     
 }
 .intro-text h1 {
-    font-size: 44px;
+    font-size: 60px;
     align-self: center;
-    margin: 25px 25px 75px 25px;
+    text-align: center;
+    margin: 25px 25px 25px 25px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
 }
 .intro-text p{
     font-size: 22px;
     font-weight: 300;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
    
-}
+} 
