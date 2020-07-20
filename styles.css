@@ -1,105 +1,168 @@
-
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+h1 {
+	text-transform: uppercase;
+	letter-spacing: 8px;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .header-section {
-    display: flex;
-    background-image: linear-gradient(to right bottom, rgba(48, 56, 65, 0.7), rgba(58, 71, 80, 0.7)), url('./img/carHD.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: center;
+	display: flex;
+	background-image: linear-gradient(to right bottom, rgba(103, 110, 117, 0.7), rgba(51, 62, 70, 0.7)),
+		url('./img/carHD.jpg');
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 header {
-    display: flex;
-    width: 80%;
-    height: 10vh;
-    margin: 0 auto auto auto;
-    align-items: center;
-
+	display: flex;
+	width: 80%;
+	height: 10vh;
+	margin: 0 auto auto auto;
+	align-items: center;
 }
-
-
 
 .logo-container {
-    flex: 1;
+	flex: 1;
 }
 .logo {
-    font-weight: 500;
-    margin: 5px;
+	font-weight: 500;
+	margin: 5px;
+	font-size: 18px;
+	/*  color: white; */
 }
 
 nav {
-    flex:2;
+	flex: 2;
 }
 
-.logo-container,.nav-links,.contact-link-container {
-    display: flex;
+.logo-container,
+.nav-links,
+.contact-link-container {
+	display: flex;
 }
 
-.contact-link-container{
-    flex: 1;
-    justify-content: flex-end ;
+.contact-link-container {
+	flex: 1;
+	justify-content: flex-end;
 }
 .nav-links-contacts {
-    list-style: none;
+	list-style: none;
 }
 .nav-links {
-    justify-content: space-around;
-    list-style: none;
+	justify-content: space-around;
+	list-style: none;
 }
 .nav-link {
-    color: #ffffff;
-    font-size: 18px;
-    text-decoration: none;
-    
-
+	color: #ffffff;
+	font-size: 18px;
+	text-decoration: none;
 }
 
 .introdution {
-    display: flex;
-    height: 100vh;
-    width: 80%;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
 }
 
 .intro-text {
-    display: flex;
-    flex-direction: column;
-    margin: 100px auto;
-    width: 80%;
-    margin-bottom: 200px;
-    color: white;
-    
+	display: flex;
+	flex-direction: column;
+	margin: 100px auto;
+	width: 80%;
+	margin-bottom: 200px;
+	color: white;
 }
 .intro-text h1 {
-    font-size: 60px;
-    align-self: center;
-    text-align: center;
-    margin: 25px 25px 25px 25px;
-    text-transform: uppercase;
-    letter-spacing: 8px;
+	font-size: 60px;
+	align-self: center;
+	text-align: center;
+	margin: 25px 25px 25px 25px;
 }
-.intro-text p{
-    font-size: 22px;
-    font-weight: 300;
-    align-self: center;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-   
-} 
+.intro-text p {
+	font-size: 22px;
+	font-weight: 300;
+	align-self: center;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+
+.services-section {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+.services-heading {
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 50px auto;
+}
+.services-heading h1 {
+	font-size: 40px;
+	color: #47363c;
+}
+.services-container {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	align-items: center;
+	justify-content: space-around;
+	/* flex-wrap: wrap; */
+}
+
+.itmes {
+	display: flex;
+	align-items: center;
+}
+.ul-list {
+	display: flex;
+	list-style: none;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+li {
+	margin: 40px auto;
+	font-size: 30px;
+}
+.list-item {
+	text-decoration: none;
+	color: #42494f;
+}
+
+.gallery-section {
+	display: flex;
+	height: 140vh;
+	flex-direction: column;
+	background-color: #42494f;
+	clip-path: polygon(0 20vh, 100% 0, 100% 120vh, 0 100%);
+}
+
+.contact-section {
+	display: flex;
+	height: 80vh;
+	flex-direction: column;
+	
+}
+
