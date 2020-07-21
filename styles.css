@@ -191,7 +191,7 @@ nav {
 	align-items: center;
 }
 .items1 {
-	
+	flex: 1;
 }
 .items2 {
 	flex: 1;
@@ -261,11 +261,32 @@ li {
 }
 
 .column {
-	display: flex;
+    display: flex;
+    flex-direction: column;
 	width: 100%;
-	height: 80%;
+    height: 80vh;
+    flex-wrap: wrap;
+    /* padding: 5px; */
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
 }
-
+.row {
+    flex: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 50%;
+    /* padding: 5px; */
+}
+.galerry-image {
+    height:100%;
+    padding: 5px;
+}
+.row img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
 .contact-section {
 	display: flex;
 	height: 80vh;
