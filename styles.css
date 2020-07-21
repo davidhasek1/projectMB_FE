@@ -7,8 +7,16 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: 8px;
 }
-
+body::-webkit-scrollbar {
+	display: none;
+}
 body {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+body,
+textarea {
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -36,12 +44,30 @@ header {
 
 .logo-container {
 	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: left;
 }
+
+.svg {
+	position: relative;
+	justify-content: left;
+}
+svg path {
+	fill: #ffffff;
+}
+.logo-container:hover svg path,
+.logo-container:hover,
+h4 {
+	color: #722124;
+	fill: #722124;
+}
+
 .logo {
 	font-weight: 500;
-	margin: 5px;
+	margin: 5px 5px 5px 20px;
 	font-size: 18px;
-	/*  color: white; */
+	color: white;
 }
 
 nav {
@@ -70,6 +96,10 @@ nav {
 	font-size: 18px;
 	text-decoration: none;
 }
+.nav-link:hover {
+	color: #722124;
+	text-decoration: overline;
+}
 
 .introdution {
 	display: flex;
@@ -86,7 +116,7 @@ nav {
 	margin: 100px auto;
 	width: 80%;
 	margin-bottom: 200px;
-	color: white;
+	color: #ffffff;
 }
 .intro-text h1 {
 	font-size: 60px;
@@ -115,11 +145,11 @@ nav {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin: 50px auto;
+	margin: 50px auto 0 auto;
 }
 .services-heading h1 {
 	font-size: 40px;
-	color: #47363c;
+	color: #42494f;
 }
 .services-container {
 	display: flex;
@@ -127,13 +157,20 @@ nav {
 	width: 100%;
 	margin: auto;
 	align-items: center;
-	justify-content: space-around;
-	/* flex-wrap: wrap; */
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	overflow-x: hidden;
 }
 
 .itmes {
 	display: flex;
 	align-items: center;
+}
+.items1 {
+	flex: 1;
+}
+.items2 {
+	flex: 1;
 }
 .ul-list {
 	display: flex;
@@ -141,14 +178,21 @@ nav {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	text-align: center;
+	margin: 0 20px 0 20px;
 }
 li {
 	margin: 40px auto;
 	font-size: 30px;
+	font-weight: 300;
 }
 .list-item {
 	text-decoration: none;
 	color: #42494f;
+}
+.list-item:hover {
+	color: #722124;
+	text-decoration: overline;
 }
 
 .gallery-section {
@@ -159,10 +203,141 @@ li {
 	clip-path: polygon(0 20vh, 100% 0, 100% 120vh, 0 100%);
 }
 
+.gallery-container {
+	display: flex;
+	height: 100vh;
+	margin-top: 20vh;
+}
+
 .contact-section {
 	display: flex;
 	height: 80vh;
 	flex-direction: column;
-	
 }
 
+.contact-heading {
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 10px auto 20px auto;
+}
+.contact-heading h1 {
+	font-size: 40px;
+	color: #42494f;
+}
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0 auto; /* 100px auto; */
+	width: 100%;
+	height: 80vh;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	min-width: 40%;
+	margin: 0 auto;
+}
+
+label {
+	padding: 10px 10px 10px 0;
+	color: #42494f;
+}
+
+input,
+textarea {
+	padding: 10px;
+	font-size: 16px;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid #42494f;
+}
+
+textarea {
+	border: none;
+	border-bottom: 1px solid #42494f;
+	resize: none;
+}
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+/* @keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+} */
+.btn {
+	margin: 10px 30% 0 30%;
+	padding: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 100px;
+	border: none;
+	transition: all .2s;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #42494f;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn:active {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(240, 240, 240, 0.2);
+}
+
+.btn-white {
+	background-color: #fff;
+}
+
+.btn-animated {
+	animation: moveInBottom .5s ease-out .75s;
+	animation-fill-mode: backwards;
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	margin: auto;
+}
+.footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-text {
+	font-weight: 300;
+	font-size: 14px;
+}
+.footer-text a {
+	text-decoration: none;
+	color: #42494f;
+}
+.footer-text a:hover {
+	color: #722124;
+	text-decoration: overline;
+}
