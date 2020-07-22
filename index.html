@@ -26,17 +26,23 @@
                     <h4 class="logo">Martin Bucek</h4>
                 </div>
                 <nav>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                     <ul class="nav-links">
                         <li><a class="nav-link" href="#home">Home</a></li>
                         <li><a class="nav-link" href="#services">Služby</a></li>
                         <li><a class="nav-link" href="#gallery">Galerie</a></li>
+                        <li><a class="nav-link" href="#contact">Kontakt</a></li>
                     </ul>
                 </nav>
-                <div class="contact-link-container">
+                <!-- <div class="contact-link-container">
                     <ul class="nav-links-contacts">
                         <li><a class="nav-link" href="#contact">Kontakt</a></li>
                     </ul>
-                </div>
+                </div> -->
             </header>
 
             <div class="introdution">
@@ -139,56 +145,9 @@
                     </h2>
                 </div>
             </div>
-      <!--       <div class="phone-container">
-                <h2 class="phone-text">
-                    ...nebo volejte na číslo
-                </h2>
-                <a class="phone-num" href="tel:00420777586858">777 777 777</a>
-
-            </div> -->
-           <!--  <div class="footer-container">
-                <h2 class="footer-text">
-                    <a href="mailto:hasek.david1@gmmail.com">Hašek David © 2020</a>
-                </h2>
-            </div> -->
         </section>
-       <!--  <section class="footer-section">
-            <div class="footer-container">
-                <h2 class="footer-text">
-                    <a href="mailto:hasek.david1@gmmail.com">Hašek David © 2020</a>
-                </h2>
-            </div>
-        </section> -->
         
     </main>
-    <script>
-            mybutton = document.getElementById("myBtn");
-            window.onscroll = function () { scrollFunction() };
-            window.onload = function () { typeWriter() };
-            var i = 0;
-            var txt = 'Martin Bucek'; /* The text */
-            var speed = 200; /* The speed/duration of the effect in milliseconds */
-
-            function typeWriter() {
-                if (i < txt.length) {
-                    document.getElementById("typetext").innerHTML += txt.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, speed);
-                }
-            }
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-
-                } else {
-                    mybutton.style.display = "none";
-                }
-            }
-            function topFunction() {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-    </script>
+    <script src="./app.js"></script>
 </body>
 </html>
