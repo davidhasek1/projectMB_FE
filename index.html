@@ -40,10 +40,10 @@
             </header>
 
             <div class="introdution">
-                <div class="intro-text">
-                    <h1>Martin Bucek</h1>
+                <div  class="intro-text">
+                    <h1 id="typetext"></h1>
                     <p>
-                    Car services
+                        Car services
                     </p>
                 </div>
             </div>
@@ -134,11 +134,20 @@
         
     </main>
     <script>
-        //Get the button:
             mybutton = document.getElementById("myBtn");
-
-            // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function () { scrollFunction() };
+            window.onload = function () { typeWriter() };
+            var i = 0;
+            var txt = 'Martin Bucek'; /* The text */
+            var speed = 200; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("typetext").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
 
             function scrollFunction() {
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -148,8 +157,6 @@
                     mybutton.style.display = "none";
                 }
             }
-
-            // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
                 document.body.scrollTop = 0; // For Safari
                 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
