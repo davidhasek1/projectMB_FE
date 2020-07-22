@@ -347,14 +347,14 @@ li {
 .form-container {
 	display: flex;
 	justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+	align-items: flex-start;
+	flex-direction: column;
 	margin: 0 auto 0 auto; /* 100px auto; */
 	width: 100%;
 	height: auto;
 }
 .form-wrapper {
-    width: 100%;
+	width: 100%;
 }
 .form {
 	display: flex;
@@ -451,19 +451,23 @@ textarea:focus {
 	animation-fill-mode: backwards;
 }
 
-.footer-section {
+/* .footer-section {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	height: 10vh;
 	margin: auto;
-}
-/* .footer-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 } */
+
+.footer-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	text-align: center;
+}
+
 .footer-text,
 .phone-text,
 .phone-num {
