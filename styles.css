@@ -353,6 +353,9 @@ li {
 	width: 100%;
 	height: auto;
 }
+.form-wrapper {
+    width: 100%;
+}
 .form {
 	display: flex;
 	flex-direction: column;
