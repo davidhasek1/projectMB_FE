@@ -347,7 +347,8 @@ li {
 .form-container {
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 	margin: 0 auto 0 auto; /* 100px auto; */
 	width: 100%;
 	height: auto;
@@ -361,7 +362,7 @@ li {
 }
 .phone-container {
 	display: flex;
-	/* height: 10vh; */
+	height: 10vh;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
