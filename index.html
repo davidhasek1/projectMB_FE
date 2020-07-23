@@ -121,16 +121,19 @@
                     <div class="contact-heading">
                         <h1>Kontakt</h1>
                     </div>
-                    <form class="form" action="/contacts" method="POST">
-                        <input type="hidden" name="_csrf" value="<%=csrfToken%>">
-                        <label for="name">Jmeno a příjmení</label>
-                        <input type="text" name="fullname" id="">
-                        <label for="mail">Email</label>
-                        <input type="email" name="email" id="">
-                        <label for="message">Zpráva</label>
-                        <textarea name="message" id="" cols="30" rows="7"></textarea>
-                        <button type="submit" class="btn btn-white btn-animated">Odeslat</button>
-                    </form>
+                    <div class="form-div">
+                        <form class="form" action="/contacts" method="POST">
+                            <input type="hidden" name="_csrf" value="<%=csrfToken%>">
+                            <label for="name">Jmeno a příjmení</label>
+                            <input type="text" name="fullname" id="">
+                            <label for="mail">Email</label>
+                            <input type="email" name="email" id="">
+                            <label for="message">Zpráva</label>
+                            <textarea name="message" id="" cols="30" rows="7"></textarea>
+                            <button type="submit" class="btn btn-white btn-animated">Odeslat</button>
+                        </form>
+                    </div>
+              
                     <div class="phone-container">
                         <h2 class="phone-text">
                             ...nebo volejte na číslo
