@@ -11,3 +11,6 @@ kdyz je otevreny burger tak nic nejde scrolovat..?? ted to šlo..
 popup kontakt form ??? top napad
 
 jak je šipka back to top tak stejným style udělat route v nodeu a přemístit se na jedno okno s formulářem ?? top top nápad
+
+
+footer - meší rozhraní má problém - leze nahoru - 

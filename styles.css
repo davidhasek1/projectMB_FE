@@ -614,12 +614,12 @@ textarea:focus {
 	color: #42494f;
 }
 
-.about-list {	/* když se něco bude srat v kontakterch, tak smaž toto a bude vše při původním */
-/* 	display: flex;
+.about-list {
+	/* když se něco bude srat v kontakterch, tak smaž toto a bude vše při původním */
+	/* 	display: flex;
 	width: 60%;
 	flex-wrap: wrap;
 	justify-content: space-evenly; */
-	
 }
 
 .item {
