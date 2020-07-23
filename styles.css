@@ -561,11 +561,12 @@ textarea:focus {
 	min-height: 100vh;
 	flex-direction: column;
 }
-.about-heading{
+.about-heading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 10vh;
+	color: #722124;
 }
 .about-content {
 	display: flex;
@@ -573,7 +574,6 @@ textarea:focus {
 	width: 100%;
 	height: 100%;
 }
-
 
 .image-container {
 	display: flex;
@@ -588,7 +588,6 @@ textarea:focus {
 	max-height: 100%;
 	object-fit: cover;
 	/* velikost fotky nastav v tagu img - tím by se měl nastavit statciká veliost */
-	
 }
 .portrait {
 	margin: 10%;
@@ -597,7 +596,6 @@ textarea:focus {
 }
 .portrait img {
 	min-width: 350px;
-
 }
 
 .info-container {
@@ -612,10 +610,16 @@ textarea:focus {
 .about-text {
 	padding: 20px;
 	text-align: center;
+	font-size: 20px;
+	color: #42494f;
 }
 
-.about-list {
-
+.about-list {	/* když se něco bude srat v kontakterch, tak smaž toto a bude vše při původním */
+	display: flex;
+	width: 60%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	
 }
 
 .item {
@@ -623,17 +627,25 @@ textarea:focus {
 	font-size: 20px;
 	text-align: center;
 }
+.item a {
+	text-decoration: none;
+	color: #722124;
+}
+.item a:hover {
+	color: #42494f;
+	text-decoration: overline;
+}
 
 .footer {
-  position: static;
-  padding: 10px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  /* background-color: red; */
-  color: #42494f;
-  font-weight: 300;
-  text-align: center;
+	position: static;
+	padding: 10px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	/* background-color: red; */
+	color: #42494f;
+	font-weight: 300;
+	text-align: center;
 }
 
 .footer a {
