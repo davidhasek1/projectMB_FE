@@ -534,59 +534,6 @@ textarea:focus {
 	animation-fill-mode: backwards;
 }
 
-/* .footer-section {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	height: 10vh;
-	margin: auto;
-} */
-
-.footer-container {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	height: 10vh;
-	width: 100%;
-	align-self: center;
-	text-align: center;
-	margin: auto;
-}
-
-.footer-text,
-.phone-text,
-.phone-num {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: auto;
-	font-weight: 300;
-	font-size: 16px;
-	padding: 10px;
-}
-.footer-text {
-	font-size: 12px;
-}
-.footer-text a,
-.phone-text a {
-	text-decoration: none;
-	color: #42494f;
-}
-.footer-text a:hover,
-.phone-text a:hover {
-	color: #722124;
-	text-decoration: overline;
-}
-.phone-num {
-	text-decoration: none;
-	color: #722124;
-}
-.phone-num:hover {
-	text-decoration: overline;
-	color: #722124;
-}
-
 @media screen and (max-width: 900px) {
 	.form {
 		display: flex;
@@ -675,4 +622,25 @@ textarea:focus {
 	list-style: none;
 	font-size: 20px;
 	text-align: center;
+}
+
+.footer {
+  position: static;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red; */
+  color: #42494f;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #42494f;
+}
+.footer a:hover {
+	color: #722124;
+	text-decoration: overline;
 }
