@@ -546,6 +546,7 @@ textarea:focus {
 	.form-div {
 		display: flex;
 	}
+
 	.textarea-con {
 		/* display: flex;
 		flex-direction: column; */
@@ -604,7 +605,8 @@ textarea:focus {
 	flex: 1;
 	width: 100%;
 	height: auto;
-	justify-content: space-evenly;
+	margin: auto;
+	justify-content: center;
 	align-items: center;
 }
 .about-text {
