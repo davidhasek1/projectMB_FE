@@ -145,7 +145,7 @@ nav {
 
 @media screen and (max-width: 800px) {
 	header {
-        display: flex;
+		display: flex;
 		width: 100%;
 		height: 10vh;
 		margin: 0 auto auto auto;
@@ -234,6 +234,7 @@ nav {
 	display: flex;
 	width: auto;
 	height: 15vh;
+
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -389,12 +390,12 @@ li {
 .contact-heading {
 	display: flex;
 	width: 100%;
-	height: 10vh;
+	height: 15vh;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin: 10px auto 20px auto;
-	/* padding: 30px; */
+	padding: 30px;
 }
 .contact-heading h1 {
 	font-size: 40px;
