@@ -1,16 +1,3 @@
-
-opravit fotky - v real telefonu se zase domrdaly
-a opravit velkou mezeru mezi nadpisem galerie a fotkami -opt.
-
-
-
-
-kdyz je otevreny burger tak nic nejde scrolovat..?? 
-
-
-popup kontakt form ??? top napad
-
-jak je šipka back to top tak stejným style udělat route v nodeu a přemístit se na jedno okno s formulářem ?? top top nápad
-
-
+PROBLÉMY:
 footer - meší rozhraní má problém - leze nahoru - 
+opravit fotky - v real telefonu se zase domrdaly
