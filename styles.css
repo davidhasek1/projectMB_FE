@@ -427,7 +427,7 @@ li {
 .form-div {
 	display: flex;
 	width: 90%;
-	height: auto;
+	height: 80vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -588,25 +588,22 @@ textarea:focus {
 }
 
 @media screen and (max-width: 900px) {
-
 	.form {
 		display: flex;
 		flex-direction: column;
 		height: 50vh;
 		width: 100%;
 		margin: auto;
-		overflow-x: hidden;
+		/* overflow-x: hidden; */
 	}
-	.form-div{
-		height: 50%;
+	.form-div {
+		display: flex;
 	}
-	.textarea-con{
+	.textarea-con {
 		/* display: flex;
 		flex-direction: column; */
 	}
 	textarea {
 		width: 100%;
 	}
-
-
 }
