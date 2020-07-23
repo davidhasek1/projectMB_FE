@@ -180,6 +180,7 @@ nav {
 		/* clip-path: circle(100px at 100% -20%);
 		-webkit-clip-path: circle(1500px at 100% -20%); */
 		display: none;
+		pointer-events: none;
 	}
 	.nav-links li {
 		margin: 50px auto;
