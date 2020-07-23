@@ -607,3 +607,72 @@ textarea:focus {
 		width: 100%;
 	}
 }
+
+.about-section {
+	display: flex;
+	height: 100vh;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.about-heading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+.about-content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+
+
+.image-container {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+}
+.about-img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	/* velikost fotky nastav v tagu img - tím by se měl nastavit statciká veliost */
+	
+}
+.portrait {
+	margin: 10%;
+	height: auto;
+	width: auto;
+}
+.portrait img {
+	min-width: 350px;
+
+}
+
+.info-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	width: 100%;
+	height: auto;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.about-text {
+	padding: 20px;
+	text-align: center;
+}
+
+.about-list {
+
+}
+
+.item {
+	list-style: none;
+	font-size: 20px;
+	text-align: center;
+}

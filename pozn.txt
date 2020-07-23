@@ -1,10 +1,13 @@
-https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-
 
 opravit fotky - v real telefonu se zase domrdaly
-a opravit velkou mezeru mezi nadpisem galerie a fotkami
+a opravit velkou mezeru mezi nadpisem galerie a fotkami -opt.
 
 
 
 
-kdyz je otevreny burger tak nic nejde scrolovat..
+kdyz je otevreny burger tak nic nejde scrolovat..?? ted to šlo..
+
+
+popup kontakt form ??? top napad
+
+jak je šipka back to top tak stejným style udělat route v nodeu a přemístit se na jedno okno s formulářem ?? top top nápad
