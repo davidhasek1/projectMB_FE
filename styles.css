@@ -353,7 +353,7 @@ li {
 	/* padding: 5px; */
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.column {
 		flex: 50%;
 		flex-direction: column;
@@ -427,7 +427,7 @@ li {
 .form-div {
 	display: flex;
 	width: 90%;
-	height: 50vh;
+	height: auto;
 	justify-content: center;
 	align-items: center;
 }
@@ -478,6 +478,7 @@ textarea {
 	border: none;
 	border-bottom: 1px solid #42494f;
 	resize: none;
+	width: 100%;
 }
 input:focus,
 textarea:focus {
@@ -581,4 +582,28 @@ textarea:focus {
 .phone-num:hover {
 	text-decoration: overline;
 	color: #722124;
+}
+
+@media screen and (max-width: 900px) {
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		height: 50vh;
+		width: 100%;
+		margin: auto;
+		overflow-x: hidden;
+	}
+	.form-div{
+		height: 50%;
+	}
+	.textarea-con{
+		/* display: flex;
+		flex-direction: column; */
+	}
+	textarea {
+		width: 100%;
+	}
+
+
 }
