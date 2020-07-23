@@ -5,7 +5,7 @@ a opravit velkou mezeru mezi nadpisem galerie a fotkami -opt.
 
 
 
-kdyz je otevreny burger tak nic nejde scrolovat..?? ted to šlo..
+kdyz je otevreny burger tak nic nejde scrolovat..?? 
 
 
 popup kontakt form ??? top napad

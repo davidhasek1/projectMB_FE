@@ -177,8 +177,6 @@ nav {
 		margin-left: auto;
 		flex-direction: column;
 		justify-content: flex-start;
-		/* clip-path: circle(100px at 100% -20%);
-		-webkit-clip-path: circle(1500px at 100% -20%); */
 		display: none;
 		pointer-events: none;
 	}
@@ -189,8 +187,9 @@ nav {
 	.nav-links.open {
 		display: block;
 		pointer-events: all;
-		/* clip-path: circle(100px at 100% -20%);
-		-webkit-clip-path: circle(100px at 100% -20%);  */
+	}
+	.nav-links.close {
+		display: none;
 	}
 }
 

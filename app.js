@@ -11,9 +11,12 @@ var speed = 200; /* The speed/duration of the effect in milliseconds */
 
 var hamburger = document.querySelector('.hamburger');
 var navLinks = document.querySelector('.nav-links');
-var links = document.querySelectorAll('.nav.links li');
+var links = document.querySelectorAll('.nav-link');
 
 hamburger.addEventListener('click', () => {
+	navLinks.classList.toggle('open');
+});
+navLinks.addEventListener('click', () => {
 	navLinks.classList.toggle('open');
 });
 
