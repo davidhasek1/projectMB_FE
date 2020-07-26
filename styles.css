@@ -256,12 +256,12 @@ nav {
 .services-heading {
 	display: flex;
 	width: auto;
-	height: 15vh;
+	height: 10vh;
 
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin: 10px auto 20px auto;
+	/* margin: 10px auto 20px auto; */
 	padding: 30px;
 }
 .services-heading h1 {
