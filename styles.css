@@ -373,7 +373,23 @@ li {
 	flex-direction: row;
 	width: 100%;
 	max-height: 70%;
-	/* padding: 5px; */
+	
+}
+.gallery-img-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.galerry-image {
+	padding: 5px;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
 }
 
 @media screen and (max-width: 1024px) {
@@ -394,19 +410,25 @@ li {
 		padding: 0 4px;
 		overflow-x: hidden;
 	}
+	.gallery-img-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		width: auto;
+		min-width: 100%;
+		min-height: 100%;
+	}
 
+	.galerry-image {
+		padding: 5px;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: cover;
+	}
 	/* Create four equal columns that sits next to each other */
 }
 
-.galerry-image {
-	max-width: 100%;
-	max-height: 100%;
-	padding: 5px;
-}
-.row img {
-	margin-top: 8px;
-	vertical-align: middle;
-}
 .contact-section {
 	display: flex;
 	height: 100vh;
@@ -614,7 +636,7 @@ textarea:focus {
 .about-img {
 	border: 1px solid #ddd;
 	padding: 5px;
-	 box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 	max-width: 100%;
 	max-height: 100%;
 	/* min-width: 300px;
@@ -623,7 +645,6 @@ textarea:focus {
 	/* velikost fotky nastav v tagu img - tím by se měl nastavit statciká veliost */
 }
 .portrait {
-
 	margin: 10%;
 	height: auto;
 	width: auto;
