@@ -270,20 +270,6 @@ nav {
 	/* color: #42494f; */
 	color: #722124;
 }
-.services-container {
-/* 	display: flex;
-	height: 100vh;
-	width: 100%;
-	margin: auto;
-	align-items: center;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	overflow-x: hidden; */
-}
-
-.itmes {
-
-}
 
 .ul-list {
 	display: flex;
@@ -292,7 +278,9 @@ nav {
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-	margin: 0 20px 0 20px;
+	width: 90%;
+	margin: auto;
+	/* margin: 0 50px 0 50px; */
 	
 }
 li {
