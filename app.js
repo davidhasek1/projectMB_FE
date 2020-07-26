@@ -1,7 +1,9 @@
 mybutton = document.getElementById('myBtn');
 window.onscroll = function() {
 	scrollFunction();
+
 };
+
 window.onload = function() {
 	typeWriter();
 };
@@ -25,6 +27,14 @@ function typeWriter() {
 		document.getElementById('typetext').innerHTML += txt.charAt(i);
 		i++;
 		setTimeout(typeWriter, speed);
+	}
+}
+
+function FooterButton() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = 'block';
+	} else {
+		mybutton.style.display = 'none';
 	}
 }
 

@@ -559,15 +559,19 @@ textarea:focus {
 .about-section {
 	display: flex;
 	height: 100vh;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	flex-direction: column;
 }
 .about-heading {
 	display: flex;
+	width: auto;
+	height: 10vh;
+
 	justify-content: center;
 	align-items: center;
-	height: 10vh;
-	color: #722124;
+	text-align: center;
+	margin: 10px auto 20px auto;
+	padding: 30px;
 }
 .about-content {
 	display: flex;
@@ -587,6 +591,8 @@ textarea:focus {
 .about-img {
 	max-width: 100%;
 	max-height: 100%;
+	/* min-width: 300px;
+	min-height: 400px; */
 	object-fit: cover;
 	/* velikost fotky nastav v tagu img - tím by se měl nastavit statciká veliost */
 }
@@ -617,11 +623,6 @@ textarea:focus {
 }
 
 .about-list {
-	/* když se něco bude srat v kontakterch, tak smaž toto a bude vše při původním */
-	/* 	display: flex;
-	width: 60%;
-	flex-wrap: wrap;
-	justify-content: space-evenly; */
 }
 
 .item {
@@ -638,13 +639,13 @@ textarea:focus {
 	text-decoration: overline;
 }
 
-.footer {
+
+/* .footer {
 	position: static;
 	padding: 10px;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	/* background-color: red; */
 	color: #42494f;
 	font-weight: 300;
 	text-align: center;
@@ -657,4 +658,4 @@ textarea:focus {
 .footer a:hover {
 	color: #722124;
 	text-decoration: overline;
-}
+} */
