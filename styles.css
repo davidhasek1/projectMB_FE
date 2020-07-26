@@ -40,12 +40,35 @@ body {
 	padding: 10px; /* Some padding */
 	border-radius: 10px; /* Rounded corners */
 	font-size: 18px; /* Increase font size */
+	display: none;
 }
 .svg-top-btn .path-top-btn {
 	fill: #722124;
 }
 .svg-top-btn:hover .path-top-btn {
 	fill: #ce1f25;
+}
+
+#creator {
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	left: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background: none;
+	color: #989ca0; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 10px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+	display: none;
+}
+#creator svg path {
+	fill: #989ca0;
+}
+#creator svg:hover path {
+	fill: #000000;
 }
 /* #myBtn:hover {
 	color: #ce1f25;
@@ -589,6 +612,9 @@ textarea:focus {
 	align-items: center;
 }
 .about-img {
+	border: 1px solid #ddd;
+	padding: 5px;
+	 box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 	max-width: 100%;
 	max-height: 100%;
 	/* min-width: 300px;
@@ -597,6 +623,7 @@ textarea:focus {
 	/* velikost fotky nastav v tagu img - tím by se měl nastavit statciká veliost */
 }
 .portrait {
+
 	margin: 10%;
 	height: auto;
 	width: auto;
@@ -638,24 +665,3 @@ textarea:focus {
 	color: #42494f;
 	text-decoration: overline;
 }
-
-
-/* .footer {
-	position: static;
-	padding: 10px;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	color: #42494f;
-	font-weight: 300;
-	text-align: center;
-}
-
-.footer a {
-	text-decoration: none;
-	color: #42494f;
-}
-.footer a:hover {
-	color: #722124;
-	text-decoration: overline;
-} */

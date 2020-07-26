@@ -1,7 +1,8 @@
 mybutton = document.getElementById('myBtn');
+footer = document.getElementById('creator');
 window.onscroll = function() {
 	scrollFunction();
-
+	Footer();
 };
 
 window.onload = function() {
@@ -30,11 +31,11 @@ function typeWriter() {
 	}
 }
 
-function FooterButton() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = 'block';
+function Footer() {
+	if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+		footer.style.display = 'block';
 	} else {
-		mybutton.style.display = 'none';
+		footer.style.display = 'none';
 	}
 }
 
